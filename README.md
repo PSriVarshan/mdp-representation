@@ -24,7 +24,12 @@ Write your answer here
 Write your answer here
 
 ### Graphical Representation
-Write your answer here
+
+
+![Img](https://github.com/user-attachments/assets/23c283e1-dc60-4a6f-b942-efd0b7d60d66)
+
+
+
 
 ## PYTHON REPRESENTATION:
 ```py
@@ -53,9 +58,9 @@ mdp = {
 
 ## OUTPUT:
 
+![image](https://github.com/user-attachments/assets/d26e9339-886c-457d-9d87-9d3c4c8a5779)
 
 
 ## RESULT:
 
-Write your output here
-
+Thus the given real world problem is successfully represented in a MDP form.
