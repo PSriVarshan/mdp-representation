@@ -1,27 +1,50 @@
+Developed By : Sri Varshan P
+Register No. 212222240104
+Date : 
+
 # MDP REPRESENTATION
 
 ## AIM:
-Write your aim here
+
+To represent any one real-world problem in MDP form.
 
 ## PROBLEM STATEMENT:
 
 ### Problem Description
-Write your answer here
+
+### An umpire in a sports game needs to make decisions based on the current game state, which includes the game score and the number of fouls. The umpire can either provide a score or not and call a foul or not. The aim is to determine the optimal decision-making strategy for the umpire to maximize the reward, where positive rewards are given for correct actions that align with the game rules.
 
 ### State Space
-Write your answer here
+
+The state space consists of all possible combinations of the game score and the foul status. Each state is represented by:
+
+> Game Score: The current score of the game.
+<br>
+
+> Foul Status: Indicates whether a foul has occurred
 
 ### Sample State
-Write your answer here
+
+(Game Score = 3, Foul Status = True(1))
 
 ### Action Space
-Write your answer here
+The action space consists of the following actions:
+
+1.Provide Score: Update or confirm the game score.
+
+2.Call Foul: Indicate that a foul has occurred.
+
+3.Do Nothing: Take no action.
 
 ### Sample Action
-Write your answer here
+
+Call Foul
 
 ### Reward Function
-Write your answer here
+
+#### Reward of 1: If the umpire calls a foul when a foul has occurred and provides the score.
+
+#### Reward of 0: If the umpire either does not provide the score or fails to call a foul when a foul has occurred.
 
 ### Graphical Representation
 
