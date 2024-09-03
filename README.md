@@ -8,7 +8,7 @@
 
 ## AIM:
 
-To represent any one real-world problem in MDP form.
+### To represent an optimal decision-making strategy for an umpire in a sports game into a Markov Decision Process (MDP) form
 
 ## PROBLEM STATEMENT:
 
@@ -51,7 +51,7 @@ Call Foul
 ### Graphical Representation
 
 
-![Img](https://github.com/user-attachments/assets/23c283e1-dc60-4a6f-b942-efd0b7d60d66)
+![Image](https://github.com/user-attachments/assets/264f5588-f2f4-483b-a674-be54de681f6e)
 
 
 
@@ -84,7 +84,8 @@ mdp = {
 
 ## OUTPUT:
 
-![image](https://github.com/user-attachments/assets/d26e9339-886c-457d-9d87-9d3c4c8a5779)
+
+![image](https://github.com/user-attachments/assets/84ffdf0e-ee1a-44a1-80ce-676bddb22cfe)
 
 
 ## RESULT:
