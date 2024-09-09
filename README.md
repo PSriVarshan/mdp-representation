@@ -48,6 +48,9 @@ Call Foul
 
 #### Reward of 0: If the umpire either does not provide the score or fails to call a foul when a foul has occurred.
 
+
+
+
 ### Graphical Representation
 
 
@@ -59,33 +62,53 @@ Call Foul
 ## PYTHON REPRESENTATION:
 ```py
 
-mdp = {
-    0: {  # Initial state with no score and no foul
-        1: [(0.8, 2, 1.0, False)],  # Higher chance of scoring with a foul
-        0: [(0.2, 1, 0.0, False)]  # Adjusted probability for no foul
+umpire_mdp = {
+    0: {  # State: 0 (Score 0, Fouls 0)
+        0: [(0.8, 1, 1.0, False), (0.2, 0, 0.0, True)],  # Provide score
+        1: [(0.7, 2, -1.0, False), (0.3, 0, 0.0, True)]  # Call foul
     },
-    1: {  # Score increased, no foul called
-        1: [(1.0, 3, 1.0, True)],  # Moves to terminal state with foul
-        0: [(0.0, 1, 0.0, False)]  # No probability to stay in the same state
+    1: {  # State: 1 (Score 1, Fouls 0)
+        0: [(0.9, 1, 1.0, False), (0.1, 3, 2.0, True)],  # Provide score
+        1: [(0.6, 2, -1.0, False), (0.4, 1, 0.0, True)]  # Call foul
     },
-    2: {  # Score increased with a foul
-        1: [(1.0, 3, 1.0, True)],  # Guaranteed transition to terminal state
-        0: [(0.0, 2, 0.0, False)]  # No probability to stay in the same state
+    2: {  # State: 2 (Score 0, Fouls 1)
+        0: [(0.5, 2, 0.0, False), (0.5, 3, 1.0, True)],  # Provide score
+        1: [(0.8, 4, -2.0, False), (0.2, 2, 0.0, True)]  # Call foul
     },
-    3: {  # Terminal state
-        1: [(1.0, 3, 1.0, True)],
-        0: [(1.0, 3, 0.0, True)]  # Remains in the terminal state
+    3: {  # State: 3 (Score 1, Fouls 1)
+        0: [(0.7, 3, 0.0, False), (0.3, 4, 2.0, True)],  # Provide score
+        1: [(0.5, 4, -2.0, False), (0.5, 3, 0.0, True)]  # Call foul
+    },
+    4: {  # State: 4 (Score 2, Fouls 0)
+        0: [(1.0, 4, 0.0, False)],  # Provide score
+        1: [(0.9, 5, -1.0, False), (0.1, 4, 0.0, True)]  # Call foul
     }
 }
 
 
+
 ```
+
+### States:
+
+0: Score 0, Fouls 0
+1: Score 1, Fouls 0
+2: Score 0, Fouls 1
+3: Score 1, Fouls 1
+4: Score 2, Fouls 0
+
+
+#### Actions:
+
+0: Provide score
+1: Call foul
 
 
 ## OUTPUT:
 
 
-![image](https://github.com/user-attachments/assets/84ffdf0e-ee1a-44a1-80ce-676bddb22cfe)
+![image](https://github.com/user-attachments/assets/0bcb28b9-49e2-482a-924f-44df97071dca)
+
 
 
 ## RESULT:
