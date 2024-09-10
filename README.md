@@ -53,8 +53,8 @@ Call Foul
 
 ### Graphical Representation
 
+![Image](https://github.com/user-attachments/assets/d4f3d087-e168-4af1-9f04-e4f02ba8cdde)
 
-![Image](https://github.com/user-attachments/assets/264f5588-f2f4-483b-a674-be54de681f6e)
 
 
 
