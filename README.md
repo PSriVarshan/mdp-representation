@@ -92,15 +92,20 @@ umpire_mdp = {
 ### States:
 
 0: Score 0, Fouls 0
+
 1: Score 1, Fouls 0
+
 2: Score 0, Fouls 1
+
 3: Score 1, Fouls 1
+
 4: Score 2, Fouls 0
 
 
 #### Actions:
 
 0: Provide score
+
 1: Call foul
 
 
